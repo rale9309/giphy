@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 5px 100px;
+    background-color: rgb(97, 200, 235);
+    font-size: 20px;
+    color: white;
+}
+
+main {
+    padding: 15px 100px;
+
+    h1 {
+        color: rgb(78, 78, 78);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    input {
+        display: block;
+        padding: 5px;
+        width: 1000px;
+        margin: 15px auto;
+        outline: none;
+        border: 1px solid rgb(97, 200, 235);
+        &:focus {
+            box-shadow: 0 0 10px 1px rgb(97, 200, 235);
+        }
+    }
+
+    .results {
+        margin: 30px auto;
+        width: 1000px;
+        display: flex;
+        gap: 15px;
+    }
+
+    .column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card {
+        .slika {
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
